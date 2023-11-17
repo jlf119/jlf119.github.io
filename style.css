@@ -1,0 +1,27 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, section, footer {
+    padding: 20px;
+    background: linear-gradient(to right, #000, #333);
+    opacity: 0.9;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.project {
+    margin-bottom: 40px;
+}
