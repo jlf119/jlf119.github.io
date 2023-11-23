@@ -1,33 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1 - Joseph Folkes' Design Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+  <head>
+    <title>Project1 - Long Term Green Horse</title>
+    <meta property="og:title" content="Project1 - Long Term Green Horse" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
 
-    <header>
-        <h1>Joseph Folkes</h1>
-        <p>Design Portfolio</p>
-    </header>
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: "Tahoma";
+        font-size: 16px;
+      }
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="project1.html">Project 1</a>
-        <a href="project2.html">Project 2</a>
-        <!-- Add links for other projects -->
-    </nav>
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
 
-    <section id="project1" class="project">
-        <h2>Project 1</h2>
-        <p>Description of Project 1. You can include details, images, and links here.</p>
-    </section>
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      @keyframes fade-in-left {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./project1.css" rel="stylesheet" />
 
-    <footer>
-        <p>&copy; 2023 Joseph Folkes. All rights reserved.</p>
-    </footer>
-
-</body>
+      <div class="project1-container">
+        <div class="project1-header">
+          <nav class="project1-container1">
+            <a
+              href="https://www.linkedin.com/in/joseph-folkes"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="project1-link"
+            >
+              <svg viewBox="0 0 877.7142857142857 1024" class="project1-icon">
+                <path
+                  d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/indusketch/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="project1-link1"
+            >
+              <svg viewBox="0 0 877.7142857142857 1024" class="project1-icon2">
+                <path
+                  d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                ></path>
+              </svg>
+            </a>
+          </nav>
+        </div>
+        <div class="project1-banner"></div>
+        <div class="project1-hero">
+          <div class="project1-hero1">
+            <div class="project1-container2">
+              <h1 class="project1-hero-heading heading1">Mensura Mask</h1>
+              <span class="project1-hero-sub-heading">
+                <span class="project1-text">
+                  Improving one-size-fits-all face masks
+                </span>
+                <br />
+                <span>↓</span>
+                <br />
+              </span>
+              <div class="project1-btn-group"></div>
+            </div>
+          </div>
+        </div>
+        <div class="project1-banner1"></div>
+        <div class="project1-details">
+          <div class="project1-details1">
+            <div class="project1-container3">
+              <span class="project1-details-sub-heading">
+                <span class="project1-text04">
+                  Mensura Mask was a research-driven initiative led by a group
+                  of researchers fr
+                </span>
+                <span class="project1-text05">
+                  om Imperial College London. It aimed to develop a quick and
+                  cost-effective d
+                </span>
+                <span class="project1-text06">
+                  esign-through-manufacture process for making custom-fit face
+                  masks in&nbsp;
+                </span>
+                <span class="project1-text07">
+                  order to provide additional support to healthcare services
+                  during public&nbsp;
+                </span>
+                <span class="project1-text08">health crises.</span>
+                <br />
+              </span>
+            </div>
+            <img
+              alt="image"
+              src="public/me/sds_thatsocial_44-400h.jpg"
+              class="project1-details-image"
+            />
+          </div>
+        </div>
+        <div class="project1-details2">
+          <div class="project1-details3">
+            <img
+              alt="image"
+              src="public/me/sds_thatsocial_44-400h.jpg"
+              class="project1-details-image1"
+            />
+            <div class="project1-container4">
+              <h2 class="project1-details-heading heading2">The problem</h2>
+              <span class="project1-details-sub-heading1">
+                Conventional filtering face masks do not tightly seal to the
+                face, leaving gaps. Unfiltered air can flow in at these points,
+                making the filter redundant and mask ineffective. Badly fitting
+                masks also lead to discomfort and later pain and injury. Face
+                shapes vary drastically so standardized masks cannot solve the
+                problem.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="project1-details4">
+          <div class="project1-details5">
+            <div class="project1-container5">
+              <h2 class="project1-details-heading1 heading2">Automation</h2>
+              <span class="project1-details-sub-heading2">
+                This project involved automating the creation of a 3D printable
+                STL file for the mask from facial scan data using the Blender
+                API. The code was converted from the Fusion360 API. The
+                flexibility of the program allows for creation of masks to fit
+                different people’s faces, with different thicknesses and inlet
+                sizes.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="project1-hero2">
+          <div class="project1-hero3">
+            <img
+              alt="image"
+              src="public/mensura/2-1500w.png"
+              class="project1-image"
+            />
+          </div>
+        </div>
+        <div class="project1-hero4">
+          <div class="project1-hero5">
+            <iframe
+              src="https://www.youtube.com/embed/urYKuRXwilY?si=zWey64870SOrUFvH"
+              class="project1-iframe"
+            ></iframe>
+          </div>
+        </div>
+        <section class="project1-gallery">
+          <div class="project1-details6">
+            <h2 class="project1-details-heading2 heading2">Where to next?</h2>
+            <div class="project1-container6">
+              <h2 class="project1-details-heading3 heading2">&lt;</h2>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name49"
+              >
+                <img
+                  alt="image"
+                  src="public/mensura/2-1500w.png"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <a
+                href="https://www.linkedin.com/in/joseph-folkes/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="project1-banner-button button"
+              >
+                Home
+              </a>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name48"
+              >
+                <img
+                  alt="image"
+                  src="public/mensura/2-1500w.png"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <h2 class="project1-details-heading4 heading2">&gt;</h2>
+            </div>
+          </div>
+        </section>
+        <div class="project1-banner2">
+          <div class="project1-banner3">
+            <h1 class="project1-banner-heading heading2">
+              I hope you enjoy my Portfolio
+            </h1>
+            <span class="project1-banner-sub-heading">
+              Discover one of the ways in which I've spent my time for the past
+              few years. For something more real-time, go see LinkedIn!
+            </span>
+            <a
+              href="https://www.linkedin.com/in/joseph-folkes/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="project1-banner-button1 button"
+            >
+              Find out more
+            </a>
+          </div>
+        </div>
+        <div class="project1-footer"></div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
 </html>

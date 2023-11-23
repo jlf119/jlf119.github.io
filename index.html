@@ -1,94 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./assets/css/style.css" rel="stylesheet">
-    <title>Joseph Folkes - Design Portfolio</title>
-</head>
-<body>
-    <div class="home-container">
-        <header class="home-header"></header>
+  <head>
+    <title>Long Term Green Horse</title>
+    <meta property="og:title" content="Long Term Green Horse" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
 
-        <section class="home-hero">
-            <div class="home-hero1">
-                <div class="home-container1">
-                    <h1 class="home-hero-heading heading1">Joseph Folkes</h1>
-                    <span class="home-hero-sub-heading">Design Engineering Portfolio</span>
-                    <div class="home-btn-group">
-                        <button class="home-hero-button1 button">Get Started</button>
-                        <button class="home-hero-button2 button">Learn More →</button>
-                    </div>
-                </div>
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: "Tahoma";
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      @keyframes fade-in-left {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div class="home-header">
+          <nav class="home-container1">
+            <a
+              href="https://www.linkedin.com/in/joseph-folkes"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link"
+            >
+              <svg viewBox="0 0 877.7142857142857 1024" class="home-icon">
+                <path
+                  d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/indusketch/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link01"
+            >
+              <svg viewBox="0 0 877.7142857142857 1024" class="home-icon2">
+                <path
+                  d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                ></path>
+              </svg>
+            </a>
+          </nav>
+        </div>
+        <div class="home-banner"></div>
+        <div class="home-hero">
+          <div class="home-hero1">
+            <div class="home-container2">
+              <h1 class="home-hero-heading heading1">Joseph Folkes</h1>
+              <span class="home-hero-sub-heading">
+                Design Engineering Portfolio
+              </span>
+              <div class="home-btn-group">
+                <button class="home-hero-button1 button">Explore</button>
+              </div>
             </div>
-        </section>
-
-        <section class="home-details">
-            <div class="home-details1">
-                <div class="home-container2">
-                    <span class="home-text sectionTitle"><span>Details</span><br /></span>
-                    <h2 class="home-details-heading heading2">About Joseph Folkes</h2>
-                    <span class="home-details-sub-heading">
-                        Joseph Folkes is a talented design engineer with a passion for
-                        creating innovative solutions. With expertise in various design
-                        tools and technologies, he has successfully completed numerous
-                        projects across different industries.
-                    </span>
-                </div>
-                <img alt="image" src="https://via.placeholder.com/800x400" class="home-details-image">
+          </div>
+        </div>
+        <div class="home-details">
+          <div class="home-details1">
+            <div class="home-container3">
+              <h2 class="home-details-heading heading2">Hey, I'm Joseph</h2>
+              <span class="home-details-sub-heading">
+                I'm exploring the creative links between design, engineering,
+                and now business. My experience and interests are in
+                entrepreneurship, additive manufacturing and generative / AI
+                automated design, and sustainability / circular economy. Excited
+                to keep learning!
+              </span>
             </div>
-        </section>
-
+            <img
+              alt="image"
+              src="public/me/sds_thatsocial_44-400h.jpg"
+              class="home-details-image"
+            />
+          </div>
+        </div>
+        <div class="home-banner1"></div>
         <section class="home-gallery">
-            <div class="home-gallery1">
-                <h1 class="home-gallery-heading heading2">Portfolio Gallery</h1>
-                <span class="home-gallery-sub-heading">Explore some of my design engineering projects</span>
-                <div class="home-container3">
-                    <div class="gallery-card3-gallery-card gallery-card3-root-class-name">
-                        <img alt="image" src="./assets/images/portfolioPhotos/2.png" class="gallery-card3-image">
-                    </div>
-                    <!-- Add more gallery cards as needed -->
-                    <div class="gallery-card3-gallery-card gallery-card3-root-class-name">
-                        <img alt="image" src="./assets/images/portfolioPhotos/4.png" class="gallery-card3-image">
-                    </div>
-                    <div class="gallery-card3-gallery-card gallery-card3-root-class-name">
-                        <img alt="image" src="./assets/images/portfolioPhotos/39.png" class="gallery-card3-image">
-                    </div>
-                    <div class="gallery-card3-gallery-card gallery-card3-root-class-name">
-                        <img alt="image" src="./assets/images/portfolioPhotos/42.png" class="gallery-card3-image">
-                    </div>
-                    <div class="gallery-card3-gallery-card gallery-card3-root-class-name">
-                        <img alt="image" src="./assets/images/portfolioPhotos/60.png" class="gallery-card3-image">
-                    </div>
-                    <div class="gallery-card3-gallery-card gallery-card3-root-class-name">
-                        <img alt="image" src="./assets/images/portfolioPhotos/2.png" class="gallery-card3-image">
-                    </div>
-                    <div class="gallery-card3-gallery-card gallery-card3-root-class-name">
-                        <img alt="image" src="./assets/images/portfolioPhotos/2.png" class="gallery-card3-image">
-                    </div>
-                    <div class="gallery-card3-gallery-card gallery-card3-root-class-name">
-                        <img alt="image" src="./assets/images/portfolioPhotos/2.png" class="gallery-card3-image">
-                    </div>
-                    <div class="gallery-card3-gallery-card gallery-card3-root-class-name">
-                        <img alt="image" src="./assets/images/portfolioPhotos/2.png" class="gallery-card3-image">
-                    </div>
+          <div class="home-gallery1">
+            <h1 class="home-gallery-heading heading2">Portfolio Gallery</h1>
+            <span class="home-gallery-sub-heading">
+              Dive into some of my design engineering projects
+            </span>
+            <div class="home-container4">
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name"
+              >
+                <img
+                  alt="image"
+                  src="public/mensura/2-1500w.png"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name1"
+              >
+                <img
+                  alt="image"
+                  src="public/modelG/4-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name3"
+              >
+                <img
+                  alt="image"
+                  src="public/soap/42-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name2"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1644214250706-56e8dbd457ae?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMDI1ODczOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name4"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1638272467280-015d9b091d67?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMDI1ODczOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name5"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1634654284517-dd5cd3d04f27?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMDI1ODczOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name6"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1632395627727-3b97d0724814?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMDI1ODczOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name7"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1581094787965-53e07f34bb6f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMDI1ODczOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name8"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1679712070587-112faf7c4331?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMDI1ODczOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name9"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMDI1ODczOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name10"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1581094481644-f2ab64522498?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMDI1ODczOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name11"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1640356872989-e5a9cdcdd653?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMDI1ODczOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="home-banner2"></div>
+        <section class="home-gallery2">
+          <div class="home-gallery3">
+            <h1 class="home-gallery-heading1 heading2">Business Experience</h1>
+            <span class="home-gallery-sub-heading1">
+              Shout out to some of the amazing companies I've had the pleasure
+              of being a part of
+            </span>
+            <div class="home-container5">
+              <a
+                href="https://www.clipenergy.co.uk/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="gallery-card-gallery-card">
+                  <img
+                    alt="image"
+                    src="public/company-logos/clip-1500w.jpg"
+                    class="gallery-card-image"
+                  />
                 </div>
+              </a>
+              <a
+                href="https://www.burohappold.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="gallery-card-gallery-card">
+                  <img
+                    alt="image"
+                    src="public/company-logos/bh-1500w.png"
+                    class="gallery-card-image"
+                  />
+                </div>
+              </a>
+              <a
+                href="https://rheonlabs.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="gallery-card-gallery-card">
+                  <img
+                    alt="image"
+                    src="public/company-logos/rheon-final-logo_black-1500w.png"
+                    class="gallery-card-image"
+                  />
+                </div>
+              </a>
+              <a
+                href="http://butterfly-air.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="gallery-card-gallery-card">
+                  <img
+                    alt="image"
+                    src="public/company-logos/butterfly_air_logo-1500w.jpg"
+                    class="gallery-card-image"
+                  />
+                </div>
+              </a>
+              <a
+                href="https://www.polymetrix.org/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="gallery-card-gallery-card">
+                  <img
+                    alt="image"
+                    src="public/company-logos/polymetrix-1500w.png"
+                    class="gallery-card-image"
+                  />
+                </div>
+              </a>
+              <a
+                href="https://wearepeachies.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="gallery-card-gallery-card">
+                  <img
+                    alt="image"
+                    src="public/company-logos/peachies-1500w.png"
+                    class="gallery-card-image"
+                  />
+                </div>
+              </a>
+              <div class="gallery-card-gallery-card">
+                <img
+                  alt="image"
+                  src="public/company-logos/apollo%20tech%20logo%204-1500w.jpg"
+                  class="gallery-card-image"
+                />
+              </div>
+              <a
+                href="https://minaziconsulting.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="gallery-card-gallery-card">
+                  <img
+                    alt="image"
+                    src="public/company-logos/minazi-1500w.png"
+                    class="gallery-card-image"
+                  />
+                </div>
+              </a>
+              <a
+                href="https://is-instruments.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="gallery-card-gallery-card">
+                  <img
+                    alt="image"
+                    src="public/company-logos/is-instruments-1500w.png"
+                    class="gallery-card-image"
+                  />
+                </div>
+              </a>
             </div>
+          </div>
         </section>
-
-        <section class="home-banner">
-            <div class="home-banner1">
-                <h1 class="home-banner-heading heading2">
-                    Explore Joseph Folkes' Design Engineering Portfolio
-                </h1>
-                <span class="home-banner-sub-heading">
-                    Discover a collection of innovative design engineering projects.
-                </span>
-                <button class="home-banner-button button">Read More</button>
-            </div>
-        </section>
-
-        <footer class="home-footer"></footer>
+        <div class="home-banner3">
+          <div class="home-banner4">
+            <h1 class="home-banner-heading heading2">
+              I hope you enjoy my Portfolio
+            </h1>
+            <span class="home-banner-sub-heading">
+              Discover one of the ways in which I've spent my time for the past
+              few years. For something more real-time, go see LinkedIn!
+            </span>
+            <a
+              href="https://www.linkedin.com/in/joseph-folkes/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-banner-button button"
+            >
+              Find out more
+            </a>
+          </div>
+        </div>
+        <div class="home-footer"></div>
+      </div>
     </div>
-</body>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
 </html>
