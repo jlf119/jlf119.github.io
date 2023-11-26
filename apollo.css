@@ -148,7 +148,7 @@
   background-size: contain;
   justify-content: center;
   background-image: url("public/apollo/39.jpg");
-  background-repeat: repeat-y;
+  background-repeat: repeat-x;
   background-position: center;
 }
 

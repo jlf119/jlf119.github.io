@@ -148,7 +148,7 @@
   background-size: contain;
   justify-content: center;
   background-image: url("public/futures/cover\ page\ 3-min.png");
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
