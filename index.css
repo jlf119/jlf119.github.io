@@ -221,8 +221,7 @@
 }
 .home-hero-button1:hover {
   color: var(--dl-color-gray-white);
-  border-color: rgba(41, 20, 119, 0.9);
-  background-color: rgba(41, 20, 119, 0.9);
+  background-color: rgba(82, 82, 82, 0.9);
 }
 .home-details {
   flex: 0 0 auto;
@@ -456,8 +455,7 @@
   background-color: rgb(255, 255, 255);
 }
 .home-banner-button:hover {
-  border-color: rgba(41, 20, 119, 0.9);
-  background-color: rgba(41, 20, 119, 0.9);
+  background-color: rgba(82, 82, 82, 0.9);
 }
 .home-footer {
   flex: 0 0 auto;
