@@ -72,7 +72,7 @@
 .project2-container {
   width: 100%;
   display: flex;
-  overflow: auto;
+  overflow: visible;
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
@@ -184,7 +184,7 @@
   color: rgb(0, 0, 0);
   max-width: 800px;
   text-align: center;
-  font-family: "Raleway";
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
 }
 .project2-hero-sub-heading {
@@ -293,7 +293,7 @@
 .project2-details-heading {
   width: 80%;
   text-align: left;
-  font-family: "Raleway";
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
   margin-bottom: var(--dl-space-space-oneandhalfunits);
 }
@@ -333,7 +333,7 @@
 .project2-details-heading1 {
   width: 80%;
   text-align: center;
-  font-family: "Raleway";
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
   margin-bottom: var(--dl-space-space-oneandhalfunits);
 }
@@ -431,7 +431,7 @@
 .project2-details-heading2 {
   width: 100%;
   text-align: center;
-  font-family: "Raleway";
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
   margin-bottom: var(--dl-space-space-oneandhalfunits);
 }
@@ -444,7 +444,7 @@
 .project2-details-heading3 {
   width: 20%;
   text-align: center;
-  font-family: "Raleway";
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
 }
 .project2-gallery-image {
@@ -476,7 +476,7 @@
 .project2-details-heading4 {
   width: 20%;
   text-align: center;
-  font-family: "Raleway";
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
 }
 .project2-banner2 {
@@ -503,7 +503,7 @@
 .project2-banner-heading {
   color: var(--dl-color-gray-white);
   text-align: center;
-  font-family: "Raleway";
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
 }
 .project2-banner-sub-heading {
@@ -811,4 +811,70 @@
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-twounits);
   }
+}
+
+/* ================================================================
+   REDESIGN OVERRIDES — 2026 refresh
+   ================================================================ */
+
+/* Body / base */
+body {
+  background-color: #FFFFFF;
+  color: #111111;
+  line-height: 1.7;
+}
+
+/* Fix overflow on project container so fixed nav works */
+[class*="-container"]:first-of-type {
+  overflow: visible !important;
+}
+
+/* Add top padding to hero so it clears the fixed nav */
+[class$="-hero"]:first-of-type {
+  padding-top: 64px;
+}
+
+/* Improve body text readability */
+[class*="-details-sub-heading"],
+[class*="-details-sub-heading1"],
+[class*="-details-sub-heading2"] {
+  font-size: 1.05rem !important;
+  line-height: 1.8;
+  color: #444444;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Improve heading typography */
+[class*="-details-heading"],
+[class*="-details-heading1"],
+[class*="-details-heading2"],
+[class*="-hero-heading"] {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Hide old gradient dividers */
+[class$="-banner"],
+[class$="-banner1"] {
+  background-image: none !important;
+  height: 2px;
+  background-color: #E2E2E0;
+  padding: 0 !important;
+}
+
+/* "Where to next?" section cleanup */
+[class*="-banner-button"] {
+  border-radius: 2px !important;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.06em;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  padding: 0.75rem 1.75rem !important;
+  background-color: #111111 !important;
+  color: #ffffff !important;
+}
+
+/* Scroll hint cleanup */
+[class*="-btn-group"] {
+  border: none !important;
 }
