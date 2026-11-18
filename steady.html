@@ -1,58 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Steady — Joseph Folkes</title>
-    <meta property="og:title" content="Joseph Folkes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STEADYWARE — Joseph Folkes</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="STEADYWARE is a soldering iron and station based on a spring balanced lamp mechanism that steadies the tip, increasing ease of use and safety." />
+    <meta property="og:title" content="STEADYWARE — Joseph Folkes" />
+    <meta property="og:image" content="https://www.josephfolkes.com/public/cards/steady.webp" />
     <meta property="twitter:card" content="summary_large_image" />
-
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
-
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
     <style>
-      @keyframes fade-in-left {
-        0% {
-          opacity: 0;
-          transform: translateX(-20px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
+      html { line-height: 1.15; }
+      body { margin: 0; }
+      * { box-sizing: border-box; border-width: 0; border-style: solid; }
+      p, li, ul, dl, dd, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption { margin: 0; padding: 0; }
+      a { color: inherit; text-decoration: inherit; }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
+    <link rel="preload" as="image" href="public/steady/st-hero.webp" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./case.css" />
   </head>
   <body>
-    <link rel="stylesheet" href="./style.css" />
-    <div>
-      <link href="./steady.css" rel="stylesheet" />
 
-      <div class="project2-container">
-            <nav class="site-nav" id="site-nav">
+    <nav class="site-nav" id="site-nav">
       <a href="./index.html" class="site-nav__brand">Joseph Folkes</a>
       <div class="site-nav__links">
         <a href="./index.html#work">Work</a>
@@ -60,205 +32,69 @@
         <a href="https://www.linkedin.com/in/joseph-folkes" target="_blank" rel="noreferrer noopener">LinkedIn ↗</a>
       </div>
     </nav>
-    <script>
-      const nav = document.getElementById('site-nav');
-      window.addEventListener('scroll', () => {
-        nav.classList.toggle('scrolled', window.scrollY > 40);
-      }, { passive: true });
-    </script>
-        <div class="project2-hero">
-          <div class="project2-hero1" style="cursor: pointer;" onclick="window.scrollBy(0,window.innerHeight*0.75)">
-            <div class="project2-container2">
-              <h1 class="project2-hero-heading heading1">STEADYWARE</h1>
-              <span class="project2-hero-sub-heading">
-                <span class="project2-text">
-                  Making soldering accessible
-                </span>
-                <br />
-                <span>↓</span>
-                <br />
-              </span>
-              <div class="project2-btn-group"></div>
-            </div>
-          </div>
-        </div>
-        <div class="project2-hero4">
-          <div class="project2-hero5">
-            <iframe
-              src="https://www.youtube.com/embed/DZ-IDIHBBwQ?si=9iY1r84DlW8Sypqi"
-              class="project2-iframe"
-            ></iframe>
-          </div>
-        </div>
 
-        <div class="project2-details4">
-          <div class="project2-details5">
-            <div class="project2-container5">
-              <span class="project2-details-sub-heading2">
-                Soldering is a notoriously difficult task - you need to be practiced and have
-                the right equipment. Many people have dexterity issues that greatly affect
-                soldering, especially tremors, from slightly shaky hands up to Parkinson’s
-                disease. Through companies like LIFTWARE by verily, there is an opportunity
-                to target these niche problems with inclusive solutions.
-                STEADYWARE is a soldering iron and station based on a spring balanced
-                lamp mechanism that steadies the tip, increasing ease of use and safety.
-                Not endorsed by Verily.
-              </span>
-            </div>
+    <main class="cs">
+
+      <header class="cs-hero">
+        <div class="cs-hero__text">
+          <p class="sectionTitle cs-hero__label">Inclusive Product Design<span class="cs-hero__year">2020–21</span></p>
+          <h1 class="cs-hero__title">STEADYWARE</h1>
+          <p class="cs-hero__sub">Product Design and Engineering</p>
+          <p class="cs-hero__question">How might we make aiming and positioning a soldering iron easier and more reliable for those with dexterity issues?</p>
+        </div>
+        <div class="cs-hero__media" style="--pos: 40% 50%">
+          <img src="public/steady/st-hero.webp" width="1400" height="909" alt="STEADYWARE soldering station" fetchpriority="high" />
+        </div>
+      </header>
+
+      <section class="cs-intro">
+        <div class="cs-wrap cs-intro__grid"><dl class="cs-meta"><div><dt class="sectionTitle">Year</dt><dd>2020–21</dd></div><div><dt class="sectionTitle">Project</dt><dd>Academic 2nd year group project. Not endorsed by Verily.</dd></div></dl><div class="cs-lede"><p class="cs-lede__strong">STEADYWARE is a soldering iron and station based on a spring balanced lamp mechanism that steadies the tip, increasing ease of use and safety.</p><p>Soldering is a notoriously difficult task - you need to be practiced and have the right equipment. Many people have dexterity issues that greatly affect soldering, especially tremors, from slightly shaky hands up to Parkinson’s disease. Through companies like LIFTWARE by verily, there is an opportunity to target these niche problems with inclusive solutions.</p></div></div>
+      </section>
+
+      <section class="cs-section">
+        <div class="cs-wrap"><div class="cs-video"><iframe src="https://www.youtube-nocookie.com/embed/DZ-IDIHBBwQ" title="STEADYWARE" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
+      </section>
+
+      <section class="cs-section cs-section--tint">
+        <div class="cs-wrap"><div class="cs-head"><div><span class="sectionTitle cs-head__num">01</span><h2 class="cs-title">Corrective Iron</h2></div><div class="cs-text"><p>My initial design used an accelerometer and servo to automatically correct the position of the tip of the iron and keep it steady, regardless of whether the rest of the iron is shaking. The electronics and battery all needed to fit into the casing whilst maintaining ergonomics and creating an advantageous centre of mass - a factor that the research found was important.</p></div></div><div class="cs-pair"><img src="public/steady/st-sketches.webp" width="1024" height="682" alt="Individual design development sketches" loading="lazy" decoding="async" /><img src="public/steady/st-iron.webp" width="1300" height="774" alt="Exploded view of the corrective iron" loading="lazy" decoding="async" /></div></div>
+      </section>
+
+      <section class="cs-section">
+        <div class="cs-wrap cs-split"><div class="cs-split__media"><img src="public/steady/st-station.webp" width="1500" height="772" alt="STEADYWARE soldering station" loading="lazy" decoding="async" /></div><div><span class="sectionTitle cs-head__num">02</span><h2 class="cs-title">Tremor Removing Soldering Iron</h2><div class="cs-text"><p>Due to user and expert feedback and the ease of design validation through physical prototyping, a spring balanced lamp idea was pursued further. The design incorporates a battery powered soldering iron, a steadying spring balanced lamp, temperature control and display, a sponge, a guard and a pedal controlled solder tip advancement mechanism.</p></div></div></div>
+      </section>
+
+      <section class="cs-section">
+        <div class="cs-wrap cs-split cs-split--rev"><div class="cs-split__media"><img src="public/steady/st-fea.webp" width="435" height="592" alt="Finite element analysis of the arm" loading="lazy" decoding="async" /></div><div><span class="sectionTitle cs-head__num">03</span><h2 class="cs-title">Product Engineering</h2><div class="cs-text"><p>I completed rigorous engineering development to ensure the feasibility of the design. This spanned from battery and power calculations through design for manufacture, injection moulding and assembly to finite element analysis. This informed us of the needed material for the arm, Aluminium 3004 alloy (as 3003 had insufficient tensile strength). A frequency analysis also showed that the arm would not resonate with the user’s tremor with a safety factor of 3 on the natural frequency.</p></div></div></div>
+      </section>
+
+      <section class="cs-section">
+        <div class="cs-wrap cs-split"><div class="cs-split__media"><img src="public/steady/st-pack.webp" width="1500" height="863" alt="STEADYWARE packaging" loading="lazy" decoding="async" /></div><div><span class="sectionTitle cs-head__num">04</span><h2 class="cs-title">Packaging</h2><div class="cs-text"><p>STEADYWARE matches the branding and packaging of the already established LIFTWARE to fit seamlessly into Verily’s portfolio of companies. This extended to factors such as the high pricing, where after establishing a production price from the BOM of £91.84, the soldering station would be priced somewhere between £250-350. Further work should go into exploring the same system in different applications and industries e.g. Medicine.</p></div></div></div>
+      </section>
+
+      <nav class="cs-next" aria-label="More projects">
+        <div class="cs-wrap">
+          <p class="sectionTitle">Where to next?</p>
+          <div class="cs-next__grid">
+            <a href="./futures.html" class="cs-next__card">
+              <div class="cs-next__img"><img src="public/cards/minimus.webp" alt="" loading="lazy" decoding="async" /></div>
+              <span class="sectionTitle cs-next__dir">← Previous</span>
+              <span class="cs-next__title">Minimus</span>
+            </a>
+            <a href="./soap.html" class="cs-next__card cs-next__card--next">
+              <div class="cs-next__img"><img src="public/cards/soap.webp" alt="" loading="lazy" decoding="async" /></div>
+              <span class="sectionTitle cs-next__dir">Next →</span>
+              <span class="cs-next__title">SOAP BROS</span>
+            </a>
           </div>
         </div>
+      </nav>
 
-        <div class="project2-hero2">
-          <div class="project2-hero3">
-            <img
-              alt="image"
-              src="public/steady/1700822652142-c765071c-1c02-4f1f-95f3-d82528c69dbf_27.png"
-              class="project2-image"
-            />
-          </div>
-        </div>
+    </main>
 
-        <div class="project2-details">
-          <div class="project2-details1">
-            <div class="project2-container3">
-              <h2 class="project2-details-heading heading2">Corrective Iron</h2>
-              <span class="project2-details-sub-heading">
-                My initial design used an accelerometer and servo to automatically correct
-                the position of the tip of the iron and keep it steady, regardless of whether
-                the rest of the iron is shaking. The electronics and battery all needed to fit
-                into the casing whilst maintaining ergonomics and creating an advantageous
-                centre of mass - a factor that the research found was important.
-              </span>
-            </div>
-            <img
-              alt="image"
-              src="public/steady/68.jpg"
-              class="project2-details-image"
-            />
-          </div>
-        </div>
-
-        <div class="project2-details4">
-          <div class="project2-details5">
-            <div class="project2-container5">
-              <h2 class="project2-details-heading1 heading2">Tremor Removing Soldering Iron</h2>
-              <span class="project2-details-sub-heading2">
-                Due to user and expert feedback and the ease of design validation through
-                physical prototyping, a spring balanced lamp idea was pursued further.
-                The design incorporates a battery powered soldering iron, a steadying spring
-                balanced lamp, temperature control and display, a sponge, a guard and a
-                pedal controlled solder tip advancement mechanism.
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project2-hero2">
-          <div class="project2-hero3">
-            <img
-              alt="image"
-              src="public/steady/73.jpg"
-              class="project2-image"
-            />
-          </div>
-        </div>
-
-        <div class="project2-details2">
-          <div class="project2-details3">
-            <img
-              alt="image"
-              src="public/steady/74.png"
-              class="project2-details-image1"
-            />
-            <div class="project2-container4">
-              <h2 class="project2-details-heading heading2">Product Engineering</h2>
-              <span class="project2-details-sub-heading1">
-                I completed rigorous engineering development to ensure the feasibility
-                of the design. This spanned from battery and power calculations through
-                design for manufacture, injection moulding and assembly to finite element
-                analysis. This informed us of the needed material for the arm, Aluminium
-                3004 alloy (as 3003 had insufficient tensile strength). A frequency analysis
-                also showed that the arm would not resonate with the user’s tremor with a
-                safety factor of 3 on the natural frequency.
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project2-details">
-          <div class="project2-details1">
-            <div class="project2-container3">
-              <h2 class="project2-details-heading heading2">Packaging</h2>
-              <span class="project2-details-sub-heading">
-                STEADYWARE matches the branding and packaging of the already
-                established LIFTWARE to fit seamlessly into Verily’s portfolio of companies.
-                This extended to factors such as the high pricing, where after establishing
-                a production price from the BOM of £91.84, the soldering station would be
-                priced somewhere between £250-350. Further work should go into exploring
-                the same system in different applications and industries e.g. Medicine.
-              </span>
-            </div>
-            <img
-              alt="image"
-              src="public/steady/77.jpg"
-              class="project2-details-image2"
-            />
-          </div>
-        </div>
-
-        <div class="project2-banner1"></div>
-        <section class="project2-gallery">
-          <div class="project2-details6">
-            <h2 class="project2-details-heading2 heading2">Where to next?</h2>
-            <div class="project2-container6">
-              <h2 class="project2-details-heading3 heading2">&lt;</h2>
-              <div
-                class="gallery-card3-gallery-card gallery-card3-root-class-name49"
-              >
-              <a
-                href="./futures.html"
-              >
-                <img
-                  alt="image"
-                  src="public/futures/cover page 3-min.jpg"
-                  class="gallery-card3-image"
-                />
-              </a>
-              </div>
-              <a
-                href="./index.html"
-                class="project2-banner-button button"
-              >
-                Home
-              </a>
-              <div
-                class="gallery-card3-gallery-card gallery-card3-root-class-name48"
-              >
-              <a
-                href="./soap.html"
-              >
-                <img
-                  alt="image"
-                  src="public/soap/42-1500w.jpg"
-                  class="gallery-card3-image"
-                />
-              </a>
-              </div>
-              <h2 class="project2-details-heading4 heading2">&gt;</h2>
-            </div>
-          </div>
-        </section>
-            <div class="site-cta">
+    <div class="site-cta">
       <p class="site-cta__heading">Let's connect.</p>
-      <p class="site-cta__sub">
-        For something more real-time, go see LinkedIn.
-      </p>
-      <a
-        href="https://www.linkedin.com/in/joseph-folkes/"
-        target="_blank"
-        rel="noreferrer noopener"
-        class="site-cta__btn"
-      >Find me on LinkedIn ↗</a>
+      <p class="site-cta__sub">For something more real-time, go see LinkedIn.</p>
+      <a href="https://www.linkedin.com/in/joseph-folkes/" target="_blank" rel="noreferrer noopener" class="site-cta__btn">Find me on LinkedIn ↗</a>
     </div>
     <footer class="site-footer">
       <a href="./index.html" class="site-footer__brand">Joseph Folkes</a>
@@ -268,7 +104,12 @@
       </div>
       <p class="site-footer__copy">© 2026</p>
     </footer>
-      </div>
-    </div>
+
+    <script>
+      const nav = document.getElementById('site-nav');
+      window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 40);
+      }, { passive: true });
+    </script>
   </body>
 </html>

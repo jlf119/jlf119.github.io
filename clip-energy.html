@@ -2,57 +2,29 @@
 <html lang="en">
   <head>
     <title>CLIP Energy — Joseph Folkes</title>
-    <meta property="og:title" content="Joseph Folkes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CLIP is increasing accessibility to electricity disaggregation technology through easy to install sensors, unsupervised machine learning algorithms and human-centred user interfaces." />
+    <meta property="og:title" content="CLIP Energy — Joseph Folkes" />
+    <meta property="og:image" content="https://www.josephfolkes.com/public/cards/clip.webp" />
     <meta property="twitter:card" content="summary_large_image" />
-
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
-
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
     <style>
-      @keyframes fade-in-left {
-        0% {
-          opacity: 0;
-          transform: translateX(-20px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
+      html { line-height: 1.15; }
+      body { margin: 0; }
+      * { box-sizing: border-box; border-width: 0; border-style: solid; }
+      p, li, ul, dl, dd, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption { margin: 0; padding: 0; }
+      a { color: inherit; text-decoration: inherit; }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
+    <link rel="preload" as="image" href="public/clip/clip-hero.webp" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./case.css" />
   </head>
   <body>
-    <link rel="stylesheet" href="./style.css" />
-    <div>
-      <link href="./clip-energy.css" rel="stylesheet" />
 
-      <div class="project2-container">
-            <nav class="site-nav" id="site-nav">
+    <nav class="site-nav" id="site-nav">
       <a href="./index.html" class="site-nav__brand">Joseph Folkes</a>
       <div class="site-nav__links">
         <a href="./index.html#work">Work</a>
@@ -60,148 +32,211 @@
         <a href="https://www.linkedin.com/in/joseph-folkes" target="_blank" rel="noreferrer noopener">LinkedIn ↗</a>
       </div>
     </nav>
-    <script>
-      const nav = document.getElementById('site-nav');
-      window.addEventListener('scroll', () => {
-        nav.classList.toggle('scrolled', window.scrollY > 40);
-      }, { passive: true });
-    </script>
-        <div class="project2-hero">
-          <div class="project2-hero1" style="cursor: pointer;" onclick="window.scrollBy(0,window.innerHeight*0.75)">
-            <div class="project2-container2">
-              <h1 class="project2-hero-heading heading1">CLIP Energy</h1>
-              <span class="project2-hero-sub-heading">
-                <span class="project2-text">
-                  Reducing electricity bills the smart way
-                </span>
-                <br />
-                <span>↓</span>
-                <br />
-              </span>
-              <div class="project2-btn-group"></div>
-            </div>
-          </div>
-        </div>
-        <div class="project2-hero4">
-          <div class="project2-hero5">
-            <iframe
-              src="https://www.youtube.com/embed/r8CrMJY00qQ?si=r5v1oVp0ALveqYwe"
-              class="project2-iframe"
-            ></iframe>
-          </div>
-        </div>
 
-        <div class="project2-details4">
-          <div class="project2-details5">
-            <div class="project2-container5">
-              <span class="project2-details-sub-heading2">
-                We're facing a cost-of-living crisis.
-                Disposable income has been falling at the highest rate the UK has ever seen and everyday costs like food and energy keep rising.
-                National Energy Action estimate 6.3M UK households are in fuel poverty.
-                To save money, households are forced to reduce their energy use.
-                However, they don't have the information needed to do this effectively without impacting their quality of life.
-                Smart meters attempt to provide this information, but instead only make people anxious about their energy bills.
-              </span>
+    <main class="cs">
+
+      <!-- ── Hero ─────────────────────────────────────────────── -->
+      <header class="cs-hero">
+        <div class="cs-hero__text">
+          <p class="sectionTitle cs-hero__label">Energy Insights IoT Startup<span class="cs-hero__year">2023</span></p>
+          <h1 class="cs-hero__title">CLIP Energy</h1>
+          <p class="cs-hero__sub">Clean Tech and Entrepreneurship</p>
+          <p class="cs-hero__question">How might we reduce electricity consumption, lower bills, and accelerate our transition to net zero?</p>
+        </div>
+        <div class="cs-hero__media">
+          <img src="public/clip/clip-hero.webp" width="1100" height="1257" alt="CLIP sensor clipped onto live and neutral wires" fetchpriority="high" />
+        </div>
+      </header>
+
+      <!-- ── Intro ────────────────────────────────────────────── -->
+      <section class="cs-intro">
+        <div class="cs-wrap cs-intro__grid">
+          <dl class="cs-meta">
+            <div><dt class="sectionTitle">Year</dt><dd>2023</dd></div>
+            <div><dt class="sectionTitle">Company</dt><dd>Cofounded in 2023 with 4 partners</dd></div>
+            <div><dt class="sectionTitle">Role</dt><dd>CEO</dd></div>
+          </dl>
+          <div class="cs-lede">
+            <p class="cs-lede__strong">CLIP is increasing accessibility to electricity disaggregation technology through easy to install sensors, unsupervised machine learning algorithms and human-centred user interfaces.</p>
+            <p>Millions of Londoners are struggling to pay their energy bills, but they lack the information needed to effectively reduce their usage. In parallel with this, the UK's transition to renewable energy means energy networks will require greater engagement and flexibility from consumers to effectively balance electricity supply and demand.</p>
+            <p>CLIP analyses the energy consumption of individual appliances and uses this data to provide users with actionable insights, enabling them to reduce their electricity consumption by an estimated 20%.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="cs-stats">
+        <div class="cs-stat"><span class="cs-stat__num">~£70,000</span><span class="cs-stat__label">non-dilutive investment raised</span></div>
+        <div class="cs-stat"><span class="cs-stat__num">100+</span><span class="cs-stat__label">people pitched to at the Imperial Undaunted Greenhouse programme demo day</span></div>
+        <div class="cs-stat"><span class="cs-stat__num">20%</span><span class="cs-stat__label">estimated reduction in electricity consumption</span></div>
+        <div class="cs-stat"><span class="cs-stat__num">TRL 6</span><span class="cs-stat__label">prototype functioning in the operating environment</span></div>
+      </div>
+
+      <!-- ── Video ────────────────────────────────────────────── -->
+      <section class="cs-section">
+        <div class="cs-wrap">
+          <div class="cs-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/r8CrMJY00qQ" title="CLIP Energy" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Business ─────────────────────────────────────────── -->
+      <section class="cs-section cs-section--dark">
+        <div class="cs-wrap">
+          <div class="cs-head">
+            <div><span class="sectionTitle cs-head__num">01</span><h2 class="cs-title">Adding Business to Design Engineering</h2></div>
+            <div class="cs-text">
+              <p>CLIP involved extensive business development on top of the technical work which provided the base of our innovation. As CEO I was wearing multiple hats: market researcher, strategist, salesperson, accountant, hardware designer, grant writer - every day was different. This let me expand my design engineering skillset and understand the multidisciplinary areas that it interfaces with.</p>
+              <p>Highlights of these business areas of the start-up include raising ~£70,000 non-dilutive investment and pitching to over 100 people at the Imperial Undaunted Greenhouse programme demo day.</p>
+            </div>
+          </div>
+          <div class="cs-video cs-video--facade">
+            <button type="button" class="cs-video__play" data-src="https://www.youtube-nocookie.com/embed/KgziVhdxtjE?start=8189&amp;end=8710&amp;autoplay=1&amp;rel=0" aria-label="Play: pitching CLIP at the Imperial Undaunted Greenhouse programme demo day">
+              <img src="public/clip/clip-pitch-video.webp" width="1600" height="900" alt="" loading="lazy" decoding="async" />
+              <span class="cs-video__icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Initial prototype ────────────────────────────────── -->
+      <section class="cs-section">
+        <div class="cs-wrap cs-split">
+          <div class="cs-split__media">
+            <img src="public/clip/clip-proto.webp" width="1400" height="933" alt="Initial hardware prototype" loading="lazy" decoding="async" />
+          </div>
+          <div>
+            <span class="sectionTitle cs-head__num">02</span>
+            <h2 class="cs-title">Initial Hardware Prototype</h2>
+            <div class="cs-text">
+              <p>Using a Heltec Wifi kit, Arduino and Matlab Thingspeak to sample current data from a house for several months. The firmware was iteratively upgraded: from 1Hz sampling to 1000Hz, from 15s interval single upload to half a second bulk upload, from only current sampling to power approximation using voltage.</p>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="project2-details">
-          <div class="project2-details1">
-            <div class="project2-container3">
-              <h2 class="project2-details-heading heading2">Initial Hardware Prototype</h2>
-              <span class="project2-details-sub-heading">
-                Using a Heltec Wifi kit, Arduino and Matlab Thingspeak to sample current data from a house for several months.
-                The firmware was iteratively upgraded: from 1Hz sampling to 1000Hz, from 15s interval single upload to half a second bulk upload, from only current sampling to power approximation using voltage.
-              </span>
+      <!-- ── Technical & visualisation ────────────────────────── -->
+      <section class="cs-section cs-section--tint">
+        <div class="cs-wrap">
+          <div class="cs-head">
+            <div><span class="sectionTitle cs-head__num">03</span><h2 class="cs-title">Technical and Visualisation Development</h2></div>
+          </div>
+          <figure class="cs-figure">
+            <img src="public/clip/clip-dev.webp" width="1600" height="1055" alt="CLIP hardware renders, 3D printed clip and app screens" loading="lazy" decoding="async" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ── MVP ──────────────────────────────────────────────── -->
+      <section class="cs-section">
+        <div class="cs-wrap">
+          <div class="cs-head">
+            <div><span class="sectionTitle cs-head__num">04</span><h2 class="cs-title">CLIP Data Collection MVP</h2></div>
+            <div class="cs-text">
+              <p>The main parts of the hardware are the current transformer, the capacitive voltage sensor and the ESP32 based board with microcontroller, ADCs, communication and power components. Many elements like the pinout and aux-in on the board are needed for ongoing debugging and testing outside of the full casing and other industrial design components. This design evolved from a focus on form to incorporate all of the necessary function.</p>
             </div>
-            <img
-              alt="image"
-              src="public/clip/IMG_3429.JPG"
-              class="project2-details-image"
-            />
+          </div>
+          <figure class="cs-figure cs-figure--scroll">
+            <img src="public/clip/clip-exploded.webp" width="1600" height="1002" alt="Exploded view of the CLIP data collection MVP" loading="lazy" decoding="async" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ── Machine learning ─────────────────────────────────── -->
+      <section class="cs-section">
+        <div class="cs-wrap">
+          <div class="cs-head">
+            <div><span class="sectionTitle cs-head__num">05</span><h2 class="cs-title">Machine Learning</h2></div>
+            <div class="cs-text">
+              <p>The machine learning algorithm separates the overall household electricity signal into different appliances by learning certain features. There are main types of appliance signals: steady-state, variable and cyclical. By recognising these patterns, along with incorporating things like nominal power difference, use duration and time of day, the algorithm can determine significant differences in appliances. This drives actionable energy saving insights.</p>
+              <p>CLIP leverages unsupervised algorithms to be able to bring disaggregation to unseen commercial contexts. Here is some disaggregated data from one of our home trials.</p>
+            </div>
+          </div>
+          <figure class="cs-figure cs-figure--scroll">
+            <img src="public/clip/clip-ml.webp" width="1600" height="874" alt="Total household power disaggregated into five appliances" loading="lazy" decoding="async" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ── Data pipeline ────────────────────────────────────── -->
+      <section class="cs-section cs-section--tint">
+        <div class="cs-wrap">
+          <div class="cs-head">
+            <div><span class="sectionTitle cs-head__num">06</span><h2 class="cs-title">Data Pipeline</h2></div>
+          </div>
+          <ol class="cs-steps">
+            <li class="cs-step">
+              <div class="cs-step__icon"><img src="public/clip/clip-step1.webp" width="361" height="362" alt="" loading="lazy" decoding="async" /></div>
+              <span class="sectionTitle cs-step__num"></span>
+              <h3 class="cs-step__title">Data Collection</h3>
+              <p>The ESP-32 based CLIP hardware collects current and voltage data completely non-intrusively from the electricity intake to the premises. Data is sampled at 500Hz and batched to be sent to the cloud once per second.</p>
+            </li>
+            <li class="cs-step">
+              <div class="cs-step__icon"><img src="public/clip/clip-step2.webp" width="361" height="361" alt="" loading="lazy" decoding="async" /></div>
+              <span class="sectionTitle cs-step__num"></span>
+              <h3 class="cs-step__title">Processing and Storage</h3>
+              <p>All of the data is picked up at an Azure IoT hub and then streamed through to an events hub for longer term storage and easier access from other programs. Prototypes were running for several months so I started developing Grafana dashboards to easily measure and visualise cloud analytics like uptime.</p>
+            </li>
+            <li class="cs-step">
+              <div class="cs-step__icon"><img src="public/clip/clip-step3.webp" width="361" height="362" alt="" loading="lazy" decoding="async" /></div>
+              <span class="sectionTitle cs-step__num"></span>
+              <h3 class="cs-step__title">Inference</h3>
+              <p>The events hub is accessed by python scripts which run the inference for the ML model, after it has been trained on at least 1 week's worth of energy data. This breaks it down into separate appliance data signals and measures key information like power spikes and total power consumed per appliance.</p>
+            </li>
+            <li class="cs-step">
+              <div class="cs-step__icon"><img src="public/clip/clip-step4.webp" width="361" height="362" alt="" loading="lazy" decoding="async" /></div>
+              <span class="sectionTitle cs-step__num"></span>
+              <h3 class="cs-step__title">User Insights</h3>
+              <p>Using these key features from the different appliances to build up an energy profile for the premises, actionable insights are provided to the user through notifications and the intuitive app interface. These can be anything from appliance malfunction alerts to scheduling reminders by incorporating energy price predictions.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ── Operational environment ──────────────────────────── -->
+      <section class="cs-section">
+        <div class="cs-wrap cs-split cs-split--rev">
+          <div class="cs-split__media cs-pair">
+            <img src="public/clip/clip-install1.webp" width="997" height="1143" alt="CLIP installed in the restaurant of a B2B partner" loading="lazy" decoding="async" />
+            <img src="public/clip/clip-install2.webp" width="798" height="580" alt="CLIP installed in a house" loading="lazy" decoding="async" />
+          </div>
+          <div>
+            <span class="sectionTitle cs-head__num">07</span>
+            <h2 class="cs-title">Operational Environment</h2>
+            <div class="cs-text">
+              <p>I developed CLIP to TRL level 6, with the prototype functioning in the operating environment. Here CLIP has been installed in the restaurant of one of our B2B partners (left) and in a house (right) and could be installed completely non-intrusively on any single phase system with accessible live and neutral wires.</p>
+            </div>
           </div>
         </div>
-        <div class="project2-details2">
-          <div class="project2-details3">
-            <img
-              alt="image"
-              src="public/clip/Screenshot 2023-02-23 204059.png"
-              class="project2-details-image1"
-            />
-            <div class="project2-container4">
-              <h2 class="project2-details-heading heading2">Data Collection</h2>
-              <span class="project2-details-sub-heading1">
-                The graph shows the trends that can be seen each day in a household, with clear periods overnight with no use and typically larger spikes in the mornings and evenings.
-              </span>
-            </div>
+      </section>
+
+      <div class="cs-wrap"><p class="cs-note">This is my previous start-up - to see more, go visit <a href="https://www.linkedin.com/in/joseph-folkes/" target="_blank" rel="noreferrer noopener">LinkedIn</a>!</p></div>
+
+      <!-- ── Where to next ────────────────────────────────────── -->
+      <nav class="cs-next" aria-label="More projects">
+        <div class="cs-wrap">
+          <p class="sectionTitle">Where to next?</p>
+          <div class="cs-next__grid">
+            <a href="./smell.html" class="cs-next__card">
+              <div class="cs-next__img"><img src="public/cards/smell.webp" alt="" loading="lazy" decoding="async" /></div>
+              <span class="sectionTitle cs-next__dir">← Previous</span>
+              <span class="cs-next__title">Visualise Smells</span>
+            </a>
+            <a href="./APD.html" class="cs-next__card cs-next__card--next">
+              <div class="cs-next__img"><img src="public/cards/apd.webp" alt="" loading="lazy" decoding="async" /></div>
+              <span class="sectionTitle cs-next__dir">Next →</span>
+              <span class="cs-next__title">APD</span>
+            </a>
           </div>
         </div>
+      </nav>
 
-        <div class="project2-details4">
-          <div class="project2-details5">
-            <div class="project2-container5">
-              <span class="project2-details-sub-heading2">
-                This is my previous start-up - to see more, go visit LinkedIn!
-              </span>
-            </div>
-          </div>
-        </div>
+    </main>
 
-
-        <div class="project2-banner1"></div>
-        <section class="project2-gallery">
-          <div class="project2-details6">
-            <h2 class="project2-details-heading2 heading2">Where to next?</h2>
-            <div class="project2-container6">
-              <h2 class="project2-details-heading3 heading2">&lt;</h2>
-              <div
-                class="gallery-card3-gallery-card gallery-card3-root-class-name49"
-              >
-              <a
-                href="./smell.html"
-              >
-                <img
-                  alt="image"
-                  src="public/webapp/mid3.png"
-                  class="gallery-card3-image"
-                />
-              </a>
-              </div>
-              <a
-                href="./index.html"
-                class="project2-banner-button button"
-              >
-                Home
-              </a>
-              <div
-                class="gallery-card3-gallery-card gallery-card3-root-class-name48"
-              >
-              <a
-                href="./APD.html"
-              >
-                <img
-                  alt="image"
-                  src="public/APD/IMG_3564-min.JPG"
-                  class="gallery-card3-image"
-                />
-              </a>
-              </div>
-              <h2 class="project2-details-heading4 heading2">&gt;</h2>
-            </div>
-          </div>
-        </section>
-            <div class="site-cta">
+    <div class="site-cta">
       <p class="site-cta__heading">Let's connect.</p>
-      <p class="site-cta__sub">
-        For something more real-time, go see LinkedIn.
-      </p>
-      <a
-        href="https://www.linkedin.com/in/joseph-folkes/"
-        target="_blank"
-        rel="noreferrer noopener"
-        class="site-cta__btn"
-      >Find me on LinkedIn ↗</a>
+      <p class="site-cta__sub">For something more real-time, go see LinkedIn.</p>
+      <a href="https://www.linkedin.com/in/joseph-folkes/" target="_blank" rel="noreferrer noopener" class="site-cta__btn">Find me on LinkedIn ↗</a>
     </div>
     <footer class="site-footer">
       <a href="./index.html" class="site-footer__brand">Joseph Folkes</a>
@@ -211,7 +246,22 @@
       </div>
       <p class="site-footer__copy">© 2026</p>
     </footer>
-      </div>
-    </div>
+
+    <script>
+      const nav = document.getElementById('site-nav');
+      window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 40);
+      }, { passive: true });
+      document.querySelectorAll('.cs-video__play').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const f = document.createElement('iframe');
+          f.src = btn.dataset.src;
+          f.title = btn.getAttribute('aria-label');
+          f.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+          f.allowFullscreen = true;
+          btn.replaceWith(f);
+        });
+      });
+    </script>
   </body>
 </html>

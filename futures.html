@@ -1,58 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Futures — Joseph Folkes</title>
-    <meta property="og:title" content="Joseph Folkes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimus — Joseph Folkes</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Minimus is an Operating System Add-on that integrates with all user augmentations to seamlessly minimise information overload." />
+    <meta property="og:title" content="Minimus — Joseph Folkes" />
+    <meta property="og:image" content="https://www.josephfolkes.com/public/cards/minimus.webp" />
     <meta property="twitter:card" content="summary_large_image" />
-
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
-
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
     <style>
-      @keyframes fade-in-left {
-        0% {
-          opacity: 0;
-          transform: translateX(-20px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
+      html { line-height: 1.15; }
+      body { margin: 0; }
+      * { box-sizing: border-box; border-width: 0; border-style: solid; }
+      p, li, ul, dl, dd, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption { margin: 0; padding: 0; }
+      a { color: inherit; text-decoration: inherit; }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
+    <link rel="preload" as="image" href="public/futures/mm-hero.webp" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./case.css" />
   </head>
   <body>
-    <link rel="stylesheet" href="./style.css" />
-    <div>
-      <link href="./futures.css" rel="stylesheet" />
 
-      <div class="project2-container">
-            <nav class="site-nav" id="site-nav">
+    <nav class="site-nav" id="site-nav">
       <a href="./index.html" class="site-nav__brand">Joseph Folkes</a>
       <div class="site-nav__links">
         <a href="./index.html#work">Work</a>
@@ -60,175 +32,175 @@
         <a href="https://www.linkedin.com/in/joseph-folkes" target="_blank" rel="noreferrer noopener">LinkedIn ↗</a>
       </div>
     </nav>
-    <script>
-      const nav = document.getElementById('site-nav');
-      window.addEventListener('scroll', () => {
-        nav.classList.toggle('scrolled', window.scrollY > 40);
-      }, { passive: true });
-    </script>
-        <div class="project2-hero">
-          <div class="project2-hero1" style="cursor: pointer;" onclick="window.scrollBy(0,window.innerHeight*0.75)">
-            <div class="project2-container2">
-              <h1 class="project2-hero-heading heading1">minimus</h1>
-              <span class="project2-hero-sub-heading">
-                <span class="project2-text">
-                  Human 4.0
-                </span>
-                <br />
-                <span>↓</span>
-                <br />
-              </span>
-              <div class="project2-btn-group"></div>
+
+    <main class="cs">
+
+      <!-- ── Hero ─────────────────────────────────────────────── -->
+      <header class="cs-hero">
+        <div class="cs-hero__text">
+          <p class="sectionTitle cs-hero__label">Speculative Design<span class="cs-hero__year">2021–22</span></p>
+          <h1 class="cs-hero__title">Minimus</h1>
+          <p class="cs-hero__sub">Future design for 2041</p>
+          <p class="cs-hero__question">How might we improve quality of life in urban environments by augmenting the human's ability to manage information overload?</p>
+        </div>
+        <div class="cs-hero__media">
+          <img src="public/futures/mm-hero.webp" width="1098" height="1257" alt="Human 4.0 wearing Minimus augmentations" fetchpriority="high" />
+        </div>
+      </header>
+
+      <!-- ── Intro ────────────────────────────────────────────── -->
+      <section class="cs-intro">
+        <div class="cs-wrap cs-intro__grid">
+          <dl class="cs-meta">
+            <div><dt class="sectionTitle">Year</dt><dd>2021–22</dd></div>
+            <div><dt class="sectionTitle">Project</dt><dd>Academic 3rd year group project</dd></div>
+          </dl>
+          <div class="cs-lede">
+            <p class="cs-lede__strong">Minimus is an Operating System Add-on that integrates with all user augmentations to seamlessly minimise information overload.</p>
+            <p>For many people, the current state of media delivery results in feeling overwhelmed and powerless, often leading to anxiety, fatigue, and paralysis of action. In the long term, it can result in poorer decision-making ability and speed, lower levels of analytical thinking, poorer semantic memory (memory of facts), and higher stress levels. This is on track to get worse in the near future as technology plays an increasingly prominent role in our daily lives.</p>
+            <p>The system makes deep inferences about the user's intent and selects relevant information through advanced methods of filtering, optimising, batching and queuing.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Video ────────────────────────────────────────────── -->
+      <section class="cs-section">
+        <div class="cs-wrap">
+          <div class="cs-head">
+            <div></div>
+            <div class="cs-text"><p>To visualise the system, I created a set of VR videos along with normal videos to put you in the shoes of Human 4.0.</p></div>
+          </div>
+          <div class="cs-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/zcFfranByuU" title="Minimus" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Meet Human 4.0 ───────────────────────────────────── -->
+      <section class="cs-section cs-section--dark">
+        <div class="cs-wrap cs-split">
+          <div class="cs-split__media">
+            <img src="public/futures/mm-human.webp" width="1500" height="946" alt="Human 4.0 and their consumer augmentations" loading="lazy" decoding="async" />
+          </div>
+          <div>
+            <span class="sectionTitle cs-head__num">01</span>
+            <h2 class="cs-title">Meet Human 4.0</h2>
+            <div class="cs-text">
+              <p>In the development of our solution, it was paramount to understand what the average person in 2041 would resemble. To achieve this we hypothesized about the consumer augmentations available in 2041, which would be mainly enabled by the technology in labs now and following Moore's law of miniaturisation. The augmentations are mainly either psychological, physical or social.</p>
             </div>
           </div>
         </div>
-        <div class="project2-hero4">
-          <div class="project2-hero5">
-            <iframe
-              src="https://www.youtube.com/embed/zcFfranByuU?si=yQEruN843aBWowyw"
-              class="project2-iframe"
-            ></iframe>
-          </div>
-        </div>
+      </section>
 
-        <div class="project2-details4">
-          <div class="project2-details5">
-            <div class="project2-container5">
-              <h2 class="project2-details-heading1 heading2">Information Overload</h2>
-              <span class="project2-details-sub-heading2">
-                There is currently
-                unprecedented access to vast quantities of information. This has contributed to the
-                higher levels of stress and anxiety observed over the past decade. With the rise of
-                more intrusive and pervasive technology, this insidious data overload is progressively
-                increasing and is predicted to become a major source of worsening mental health.
-                Minimus is a human augmentation system predicted for 2041 to safeguard the world's attention.
-                To visualise the system, I created a set of VR videos along with normal videos to put you in the shoes of Human 4.0.
-              </span>
+      <!-- ── System ───────────────────────────────────────────── -->
+      <section class="cs-section cs-section--tint">
+        <div class="cs-wrap">
+          <div class="cs-head">
+            <div><span class="sectionTitle cs-head__num">02</span><h2 class="cs-title">Simplified Overload Management System</h2></div>
+          </div>
+          <ol class="cs-steps">
+            <li class="cs-step">
+              <div class="cs-step__icon"><img src="public/futures/mm-step1.webp" width="361" height="362" alt="" loading="lazy" decoding="async" /></div>
+              <span class="sectionTitle cs-step__num"></span>
+              <h3 class="cs-step__title">Metamodel of the user</h3>
+              <p>After Minimus activates there is a 1 week lag period that forms a training set of data and builds the initial metamodel of the user, to prevent highly incorrect user intent prediction.</p>
+            </li>
+            <li class="cs-step">
+              <div class="cs-step__icon"><img src="public/futures/mm-step2.webp" width="361" height="361" alt="" loading="lazy" decoding="async" /></div>
+              <span class="sectionTitle cs-step__num"></span>
+              <h3 class="cs-step__title">User intent prediction</h3>
+              <p>The metamodel of the user is combined with instantaneous internal and environmental data in a Kalman filter to predict user intent in real time.</p>
+            </li>
+            <li class="cs-step">
+              <div class="cs-step__icon"><img src="public/futures/mm-step3.webp" width="361" height="362" alt="" loading="lazy" decoding="async" /></div>
+              <span class="sectionTitle cs-step__num"></span>
+              <h3 class="cs-step__title">Data prioritisation</h3>
+              <p>The incoming environmental data is prioritised by optimisation towards the user's intent. This controls the data by importance before further enhancement to prevent overload by control via quantity and delivery (which sense is targeted).</p>
+            </li>
+            <li class="cs-step">
+              <div class="cs-step__icon"><img src="public/futures/mm-step4.webp" width="361" height="362" alt="" loading="lazy" decoding="async" /></div>
+              <span class="sectionTitle cs-step__num"></span>
+              <h3 class="cs-step__title">Low friction AR interface</h3>
+              <p>The user interacts with the system via an AR interface that would be embedded into glasses or contact lenses.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ── Kalman filtering ─────────────────────────────────── -->
+      <section class="cs-section">
+        <div class="cs-wrap cs-split cs-split--rev">
+          <div class="cs-split__media">
+            <img src="public/futures/mm-kalman.webp" width="505" height="505" alt="Kalman filtering prototype" loading="lazy" decoding="async" style="margin: 0 auto;" />
+          </div>
+          <div>
+            <span class="sectionTitle cs-head__num">03</span>
+            <h2 class="cs-title">Kalman filtering</h2>
+            <div class="cs-text">
+              <p>To begin testing the system, I implemented a Kalman filtering prototype using calendar data and reported emotions to measure user intent. This gave probabilities for how likely the user is to attend future events, providing data that could then be used in models to assess the importance of related information.</p>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="project2-hero2">
-          <div class="project2-hero3">
-            <img
-              alt="image"
-              src="public/futures/story.png"
-              class="project2-image"
-            />
-          </div>
-        </div>
-
-        <div class="project2-details4">
-          <div class="project2-details5">
-            <div class="project2-container5">
-              <h2 class="project2-details-heading1 heading2">System Design</h2>
-              <span class="project2-details-sub-heading2">
-                The minimus system is a set of human augmentations and software involving several steps to effectively manage information input and reduce mental strain.
-                Data is collected from all the sensory sources, then after a short training period, minimus has a digital twin of the user that can be leveraged to predict future intent.
-                Upon ingestion of new data, the relevance of provided information is assessed through multi-objective optimisation before being prioritised, batched and queued.
-                After measuring the user's cognitive capacity, the information is provided in a controlled flow through various human augmentations including an ultra-low-friction AR interface.
-              </span>
+      <!-- ── AR interface ─────────────────────────────────────── -->
+      <section class="cs-section cs-section--tint">
+        <div class="cs-wrap">
+          <div class="cs-head">
+            <div><span class="sectionTitle cs-head__num">04</span><h2 class="cs-title">Low Friction AR Interface</h2></div>
+            <div class="cs-text">
+              <p>The widespread adoption of AR glasses and lenses in 2041 will enable users to experience the digital and real world simultaneously. The future of Human-Computer Interaction will rely on ultra-low-friction interfaces that allow users to safely and efficiently interact with the digital world while staying present in their real-world environment.</p>
+              <p>The minimus interface is divided in three virtual windows. All icons are displayed in white to avoid distractions with saturated spots of colour. The positioning of the screens leverages a user's spatial awareness, with a middle, left and right screen.</p>
             </div>
           </div>
+          <figure class="cs-figure">
+            <img src="public/futures/mm-ar.webp" width="1599" height="890" alt="Reactive, active and proactive AR windows" loading="lazy" decoding="async" />
+          </figure>
         </div>
+      </section>
 
-        <div class="project2-hero2">
-          <div class="project2-hero3">
-            <img
-              alt="image"
-              src="public/futures/Screenshot (936).png"
-              class="project2-image"
-            />
-          </div>
-        </div>
-
-        <div class="project2-details">
-          <div class="project2-details1">
-            <div class="project2-container3">
-              <h2 class="project2-details-heading heading2">Kalman filtering</h2>
-              <span class="project2-details-sub-heading">
-                To begin testing the system, I implemented a Kalman filtering prototype using calendar data and reported emotions
-                to measure user intent. This gave probabilities for how likely the user is to attend future events, providing data that could then be used in models to assess the importance of related information.
-              </span>
-            </div>
-            <img
-              alt="image"
-              src="public/futures/23.jpg"
-              class="project2-details-image"
-            />
-          </div>
-        </div>
-        <div class="project2-details2">
-          <div class="project2-details3">
-            <img
-              alt="image"
-              src="public/futures/SetupV2.png"
-              class="project2-details-image1"
-            />
-            <div class="project2-container4">
-              <h2 class="project2-details-heading heading2">Measuring the reaction</h2>
-              <span class="project2-details-sub-heading1">
-                To test the system I experienced what it would be like to be in situations with and without minimus in a VR environment.
-                Whilst measuring biometrics through a Muse 2 brain activity headset and Empactica E4 physiological signal wristband, there was a clear reduction in key metrics related to stress when minimus was activated.
-              </span>
+      <!-- ── VR testing ───────────────────────────────────────── -->
+      <section class="cs-section">
+        <div class="cs-wrap">
+          <div class="cs-head">
+            <div><span class="sectionTitle cs-head__num">05</span><h2 class="cs-title">VR Immersion Testing</h2></div>
+            <div class="cs-text">
+              <p>In order to test minimus in managing information overload, I built virtual VR environments that moved the user through stories with and without the effects of minimus. These took place in different scenarios: walking through a city, and trying to work in a house.</p>
+              <p>I then tested people in this environment using a Quest 2 headset whilst measuring their brain signals using the Muse 2 consumer EEG headset and the Empatica E4 biometric monitoring watch. These experiments showed promising preliminary results when looking at delta, theta, gamma and beta waves in the EEG and heart rate and skin temperature on the E4: the minimus system significantly reduced information overload and cognitive stress.</p>
             </div>
           </div>
-        </div>
-      
-
-        <div class="project2-banner1"></div>
-        <section class="project2-gallery">
-          <div class="project2-details6">
-            <h2 class="project2-details-heading2 heading2">Where to next?</h2>
-            <div class="project2-container6">
-              <h2 class="project2-details-heading3 heading2">&lt;</h2>
-              <div
-                class="gallery-card3-gallery-card gallery-card3-root-class-name49"
-              >
-              <a
-                href="./apollo.html"
-              >
-                <img
-                  alt="image"
-                  src="public/apollo/39.jpg"
-                  class="gallery-card3-image"
-                />
-              </a>
-              </div>
-              <a
-                href="./index.html"
-                class="project2-banner-button button"
-              >
-                Home
-              </a>
-              <div
-                class="gallery-card3-gallery-card gallery-card3-root-class-name48"
-              >
-              <a
-                href="./steady.html"
-              >
-                <img
-                  alt="image"
-                  src="public/steady/60.jpg"
-                  class="gallery-card3-image"
-                />
-              </a>
-              </div>
-              <h2 class="project2-details-heading4 heading2">&gt;</h2>
-            </div>
+          <div class="cs-pair">
+            <img src="public/futures/mm-vr.webp" width="1198" height="1371" alt="VR scenes with and without Minimus" loading="lazy" decoding="async" />
+            <img src="public/futures/mm-testing.webp" width="900" height="655" alt="Testing with a Quest 2, Muse 2 and Empatica E4" loading="lazy" decoding="async" />
           </div>
-        </section>
-            <div class="site-cta">
+        </div>
+      </section>
+
+      <!-- ── Where to next ────────────────────────────────────── -->
+      <nav class="cs-next" aria-label="More projects">
+        <div class="cs-wrap">
+          <p class="sectionTitle">Where to next?</p>
+          <div class="cs-next__grid">
+            <a href="./apollo.html" class="cs-next__card">
+              <div class="cs-next__img"><img src="public/cards/apollo.webp" alt="" loading="lazy" decoding="async" /></div>
+              <span class="sectionTitle cs-next__dir">← Previous</span>
+              <span class="cs-next__title">Apollo Tech</span>
+            </a>
+            <a href="./steady.html" class="cs-next__card cs-next__card--next">
+              <div class="cs-next__img"><img src="public/cards/steady.webp" alt="" loading="lazy" decoding="async" /></div>
+              <span class="sectionTitle cs-next__dir">Next →</span>
+              <span class="cs-next__title">Steadyware</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+    </main>
+
+    <div class="site-cta">
       <p class="site-cta__heading">Let's connect.</p>
-      <p class="site-cta__sub">
-        For something more real-time, go see LinkedIn.
-      </p>
-      <a
-        href="https://www.linkedin.com/in/joseph-folkes/"
-        target="_blank"
-        rel="noreferrer noopener"
-        class="site-cta__btn"
-      >Find me on LinkedIn ↗</a>
+      <p class="site-cta__sub">For something more real-time, go see LinkedIn.</p>
+      <a href="https://www.linkedin.com/in/joseph-folkes/" target="_blank" rel="noreferrer noopener" class="site-cta__btn">Find me on LinkedIn ↗</a>
     </div>
     <footer class="site-footer">
       <a href="./index.html" class="site-footer__brand">Joseph Folkes</a>
@@ -238,7 +210,12 @@
       </div>
       <p class="site-footer__copy">© 2026</p>
     </footer>
-      </div>
-    </div>
+
+    <script>
+      const nav = document.getElementById('site-nav');
+      window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 40);
+      }, { passive: true });
+    </script>
   </body>
 </html>

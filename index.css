@@ -233,6 +233,10 @@
   letter-spacing: 0.02em;
 }
 
+
+.work-card__year { color: var(--color-text); font-weight: 500; }
+.work-card__year::after { content: "·"; margin: 0 0.5em; color: var(--color-meta); font-weight: 400; }
+
 /* ── Experience / Companies ────────────────────────────────────── */
 
 .experience {

@@ -1,0 +1,475 @@
+/* ================================================================
+   CASE STUDY PAGES — long-form project layout
+   Used by: APD, CLIP Energy, minimus
+   ================================================================ */
+
+.cs {
+  --cs-gutter: 2.5rem;
+  --cs-max: 1300px;
+  --cs-body: #444444;
+  --cs-tint: #F5F5F3;
+  color: var(--color-text);
+  background: var(--color-bg-light);
+}
+
+.cs img { display: block; max-width: 100%; height: auto; }
+
+.cs-wrap {
+  max-width: var(--cs-max);
+  margin: 0 auto;
+  padding: 0 var(--cs-gutter);
+}
+
+/* ── Hero ──────────────────────────────────────────────────────── */
+
+.cs-hero {
+  background: var(--color-bg-dark);
+  color: var(--color-white);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.cs-hero__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 112px var(--cs-gutter) 4rem max(var(--cs-gutter), calc((100vw - var(--cs-max)) / 2 + var(--cs-gutter)));
+}
+
+.cs-hero__label { margin-bottom: 1.5rem; }
+
+.cs-hero__title {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  margin-bottom: 1rem;
+}
+
+.cs-hero__sub {
+  font-size: clamp(1.1rem, 1.6vw, 1.4rem);
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 3rem;
+}
+
+.cs-hero__question {
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  max-width: 34ch;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.cs-hero__media {
+  position: relative;
+  overflow: hidden;
+  min-height: 60vh;
+}
+
+.cs-hero__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--pos, 50% 50%);
+}
+
+.cs-hero__year::before { content: "·"; margin: 0 0.7em; }
+
+/* ── Intro ─────────────────────────────────────────────────────── */
+
+.cs-intro {
+  padding: 6rem 0 5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cs-intro--meta { padding: 3.5rem 0; }
+.cs-intro--meta .cs-meta { flex-direction: row; flex-wrap: wrap; gap: 1.5rem 4rem; }
+.cs-intro--meta .cs-intro__grid { grid-template-columns: 1fr; }
+
+.cs-intro__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.cs-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cs-meta dt { margin-bottom: 0.35rem; }
+
+.cs-meta dd {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.cs-lede p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--cs-body);
+  max-width: 62ch;
+}
+
+.cs-lede p + p { margin-top: 1rem; }
+.cs-lede p.cs-lede__strong + p { margin-top: 1.5rem; }
+
+.cs-lede p.cs-lede__strong {
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: -0.015em;
+  color: var(--color-text);
+}
+
+/* ── Stats strip ───────────────────────────────────────────────── */
+
+.cs-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cs-stat {
+  padding: 2.5rem var(--cs-gutter);
+  border-right: 1px solid var(--color-border);
+}
+
+.cs-stat:last-child { border-right: 0; }
+
+.cs-stat__num {
+  display: block;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 0.6rem;
+}
+
+.cs-stat__label {
+  font-size: 0.85rem;
+  color: var(--color-meta);
+  line-height: 1.5;
+}
+
+/* ── Sections ──────────────────────────────────────────────────── */
+
+.cs-section { padding: 6rem 0; }
+.cs-section--tint { background: var(--cs-tint); }
+.cs-section--dark { background: var(--color-bg-dark); color: var(--color-white); }
+.cs-section--dark .cs-text p { color: rgba(255, 255, 255, 0.65); }
+.cs-section + .cs-section:not(.cs-section--tint):not(.cs-section--dark) { border-top: 1px solid var(--color-border); }
+
+.cs-head {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.cs-head__num { display: block; margin-bottom: 0.75rem; }
+
+.cs-title {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.cs-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--cs-body);
+  max-width: 62ch;
+}
+
+.cs-text p + p { margin-top: 1rem; }
+.cs-text strong { font-weight: 600; color: inherit; }
+.cs-section--dark .cs-text strong { color: #fff; }
+
+/* Full-width figure */
+.cs-figure { margin: 0; }
+.cs-figure img { width: 100%; }
+.cs-figure--bleed { max-width: 1600px; margin: 0 auto; }
+
+.cs-caption {
+  margin-top: 0.9rem;
+  font-size: 0.8rem;
+  color: var(--color-meta);
+}
+
+/* Split: media + text side by side */
+.cs-split {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.cs-split--rev { grid-template-columns: 1fr 1.4fr; }
+.cs-split--rev .cs-split__media { order: 2; }
+
+.cs-split .cs-title { margin-bottom: 1.25rem; }
+
+/* Image pair */
+.cs-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+/* ── Process steps (4-up diagram) ──────────────────────────────── */
+
+.cs-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  counter-reset: step;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cs-step p + p { margin-top: 0.75rem; }
+
+.cs-step { position: relative; }
+
+.cs-step__icon {
+  width: 100%;
+  max-width: 200px;
+  aspect-ratio: 1;
+  margin-bottom: 1.5rem;
+}
+
+.cs-step__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+/* connector line between circles */
+.cs-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  right: -2.5rem;
+  height: 1px;
+  background: #CFCFCC;
+}
+
+.cs-step__num {
+  counter-increment: step;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.cs-step__num::before { content: "0" counter(step) "  "; }
+
+.cs-step__title {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
+}
+
+.cs-step p {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--cs-body);
+}
+
+/* ── Chips (list of short labels) ──────────────────────────────── */
+
+.cs-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.75rem;
+}
+
+.cs-chips li {
+  list-style: none;
+  font-size: 0.82rem;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-text);
+  background: var(--color-white);
+}
+
+.cs-section--dark .cs-chips li {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ── Video ─────────────────────────────────────────────────────── */
+
+.cs-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.cs-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Click-to-play video with a custom thumbnail */
+.cs-video__play {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  padding: 0; border: 0; background: #000; cursor: pointer;
+}
+.cs-video__play img { width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s; }
+.cs-video__play:hover img { opacity: 0.85; }
+.cs-video__icon {
+  position: absolute; top: 50%; left: 50%;
+  width: 76px; height: 76px; margin: -38px 0 0 -38px;
+  border-radius: 50%; background: rgba(255, 255, 255, 0.92);
+  transition: transform 0.2s;
+}
+.cs-video__icon::after {
+  content: ""; position: absolute; top: 50%; left: 54%;
+  transform: translate(-50%, -50%);
+  border-style: solid; border-width: 13px 0 13px 21px;
+  border-color: transparent transparent transparent #0A0A0A;
+}
+.cs-video__play:hover .cs-video__icon { transform: scale(1.08); }
+.cs-video__play:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+
+/* ── Closing note ──────────────────────────────────────────────── */
+
+.cs-note {
+  padding: 4rem 0;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--cs-body);
+  border-top: 1px solid var(--color-border);
+}
+
+.cs-note a { border-bottom: 1px solid currentColor; }
+
+/* ── Prev / next ───────────────────────────────────────────────── */
+
+.cs-next {
+  padding: 5rem 0 6rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.cs-next__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.cs-next__card { display: block; color: var(--color-text); }
+
+.cs-next__img {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #E8E7E5;
+  margin-bottom: 1rem;
+}
+
+.cs-next__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cs-next__card:hover .cs-next__img img { transform: scale(1.04); }
+
+.cs-next__dir { display: block; margin-bottom: 0.3rem; }
+
+.cs-next__title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.cs-next__card--next { text-align: right; }
+
+/* ── Responsive ────────────────────────────────────────────────── */
+
+@media (max-width: 1100px) {
+  .cs-steps { grid-template-columns: repeat(2, 1fr); gap: 3rem 2.5rem; }
+  .cs-step::after { display: none; }
+}
+
+@media (max-width: 900px) {
+  .cs { --cs-gutter: 1.25rem; }
+  .cs-hero { grid-template-columns: 1fr; min-height: 0; }
+  .cs-hero__text { padding: 112px var(--cs-gutter) 3rem; }
+  .cs-hero__media { min-height: 0; aspect-ratio: 4 / 3; }
+  .cs-intro { padding: 4rem 0; }
+  .cs-intro--meta { padding: 3rem 0; }
+  .cs-intro__grid, .cs-head { grid-template-columns: 1fr; gap: 2rem; }
+  .cs-head { margin-bottom: 2rem; }
+  .cs-split, .cs-split--rev { grid-template-columns: 1fr; gap: 2rem; }
+  .cs-split--rev .cs-split__media { order: 0; }
+  .cs-stats { grid-template-columns: repeat(2, 1fr); }
+  .cs-stat { padding: 2rem var(--cs-gutter); border-bottom: 1px solid var(--color-border); }
+  .cs-stat:nth-child(2n) { border-right: 0; }
+  .cs-section { padding: 4rem 0; }
+}
+
+@media (max-width: 600px) {
+  .cs-steps { grid-template-columns: 1fr; }
+  .cs-step__icon { max-width: 140px; }
+  .cs-pair, .cs-next__grid { grid-template-columns: 1fr; }
+  .cs-next__card--next { text-align: left; }
+}
+
+/* Keep the nav legible over light hero images */
+.cs-hero__media::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 120px;
+  background: linear-gradient(rgba(10, 10, 10, 0.55), rgba(10, 10, 10, 0));
+  pointer-events: none;
+}
+
+.cs-pair { align-items: center; }
+
+/* Labelled diagrams: keep labels readable on phones by letting them scroll sideways */
+@media (max-width: 700px) {
+  .cs-figure--scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-right: calc(-1 * var(--cs-gutter));
+    padding-right: var(--cs-gutter);
+  }
+  .cs-figure--scroll img { width: 720px; max-width: none; }
+  .cs-figure--scroll::after {
+    content: "Scroll →";
+    display: block;
+    margin-top: 0.6rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-meta);
+    position: sticky;
+    left: 0;
+  }
+}
