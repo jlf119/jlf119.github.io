@@ -1,58 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Apollo Tech — Joseph Folkes</title>
-    <meta property="og:title" content="Joseph Folkes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apollo Pod — Joseph Folkes</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The Apollo Pod is portable, sound-reactive strobe light for small parties and events." />
+    <meta property="og:title" content="Apollo Pod — Joseph Folkes" />
+    <meta property="og:image" content="https://www.josephfolkes.com/public/cards/apollo.webp" />
     <meta property="twitter:card" content="summary_large_image" />
-
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
-
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
     <style>
-      @keyframes fade-in-left {
-        0% {
-          opacity: 0;
-          transform: translateX(-20px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
+      html { line-height: 1.15; }
+      body { margin: 0; }
+      * { box-sizing: border-box; border-width: 0; border-style: solid; }
+      p, li, ul, dl, dd, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption { margin: 0; padding: 0; }
+      a { color: inherit; text-decoration: inherit; }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
+    <link rel="preload" as="image" href="public/apollo/ap-hero.webp" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./case.css" />
   </head>
   <body>
-    <link rel="stylesheet" href="./style.css" />
-    <div>
-      <link href="./apollo.css" rel="stylesheet" />
 
-      <div class="project3-container">
-            <nav class="site-nav" id="site-nav">
+    <nav class="site-nav" id="site-nav">
       <a href="./index.html" class="site-nav__brand">Joseph Folkes</a>
       <div class="site-nav__links">
         <a href="./index.html#work">Work</a>
@@ -60,182 +32,65 @@
         <a href="https://www.linkedin.com/in/joseph-folkes" target="_blank" rel="noreferrer noopener">LinkedIn ↗</a>
       </div>
     </nav>
-    <script>
-      const nav = document.getElementById('site-nav');
-      window.addEventListener('scroll', () => {
-        nav.classList.toggle('scrolled', window.scrollY > 40);
-      }, { passive: true });
-    </script>
-        <div class="project3-hero">
-          <div class="project3-hero1" style="cursor: pointer;" onclick="window.scrollBy(0,window.innerHeight*0.75)">
-            <div class="project3-container2">
-              <h1 class="project3-hero-heading heading1">Apollo Pod Lighting Design</h1>
-              <span class="project3-hero-sub-heading">
-                <span class="project3-text">
-                  Improving the small party atmosphere
-                </span>
-                <br />
-                <span>↓</span>
-                <br />
-              </span>
-              <div class="project3-btn-group"></div>
-            </div>
-          </div>
-        </div>
-        <div class="project3-details">
-          <div class="project3-details1">
-            <div class="project3-container3">
-              <span class="project3-details-sub-heading">
-                Houseparties often have professional quality music, with many homes
-                containing large speakers. This promotes dancing and mimics a club
-                atmosphere. The missing element is the lighting, with lights often switched
-                off. Strobe lights that are programmed to the music playing give clubs the
-                edge.
-                The Apollo Pod is portable, sound-reactive strobe light for small parties and
-                events. The high power LEDs allow it to light up a 5x5m area of dark room
-                whilst still maintaining over 10 hours battery life. The controls allow it to be
-                adjusted to different volumes and types of music. All for just £20.
-              </span>
-            </div>
-            <img
-              alt="image"
-              src="public/apollo/26.jpg"
-              class="project3-details-image"
-            />
-          </div>
-        </div>
 
-        <div class="project3-hero2">
-          <div class="project3-hero3">
-            <img
-              alt="image"
-              src="public/apollo/1700822652142-c765071c-1c02-4f1f-95f3-d82528c69dbf_11.png"
-              class="project3-image"
-            />
-          </div>
-        </div>
+    <main class="cs">
 
-        <div class="project3-details2">
-          <div class="project3-details3">
-            <img
-              alt="image"
-              src="public/apollo/35.jpg"
-              class="project3-details-image1"
-            />
-            <div class="project3-container4">
-              <h2 class="project3-details-heading heading2">Apollo Pod V1 30 Unit Batch Production Model</h2>
-              <span class="project3-details-sub-heading1">
-                The first iteration of the pod that we sold contained all the key
-                features but had lots of room for improvement. The LEDs needed
-                to be brighter and the controls more intuitive. We moved from
-                separate controls for audio threshold and frequency to one control
-                for general intensity in the sound-reactive mode, and one control
-                for frequency of flash in the auto-strobe mode.
-              </span>
-            </div>
-          </div>
+      <header class="cs-hero">
+        <div class="cs-hero__text">
+          <p class="sectionTitle cs-hero__label">Lighting Design<span class="cs-hero__year">2019</span></p>
+          <h1 class="cs-hero__title">Apollo Pod</h1>
+          <p class="cs-hero__sub">Lighting Design and Entrepreneurship</p>
+          <p class="cs-hero__question">How might we improve the small party atmosphere?</p>
         </div>
-        <div class="project3-details4">
-          <div class="project3-details5">
-            <div class="project3-container5">
-              <h2 class="project3-details-heading1 heading2">Apollo Pod V2</h2>
-              <span class="project3-details-sub-heading2">
-                V2 greatly improves on V1 by reducing the number of parts and
-                the assembly time, from 30 minutes to just 5. This promotes
-                greater production speed and consequently batch volume. After
-                iterating on the casing and AB testing features like legs and
-                controls, I stuck with the tilted form factor that had become a
-                defining part of V1. Batch 2 contained 50 pods.
-              </span>
-            </div>
-          </div>
+        <div class="cs-hero__media" style="--pos: 50% 50%">
+          <img src="public/apollo/ap-hero.webp" width="1400" height="1463" alt="Apollo Pod" fetchpriority="high" />
         </div>
-        <div class="project3-hero2">
-          <div class="project3-hero3">
-            <img
-              alt="image"
-              src="public/apollo/38.jpg"
-              class="project3-image"
-            />
-          </div>
-        </div>
+      </header>
 
+      <section class="cs-intro">
+        <div class="cs-wrap cs-intro__grid"><dl class="cs-meta"><div><dt class="sectionTitle">Year</dt><dd>2019</dd></div><div><dt class="sectionTitle">Company</dt><dd>Cofounded in 2019 with one partner</dd></div></dl><div class="cs-lede"><p class="cs-lede__strong">The Apollo Pod is portable, sound-reactive strobe light for small parties and events.</p><p>Houseparties often have professional quality music, with many homes containing large speakers. This promotes dancing and mimics a club atmosphere. The missing element is the lighting, with lights often switched off. Strobe lights that are programmed to the music playing give clubs the edge.</p><p>The high power LEDs allow it to light up a 5x5m area of dark room whilst still maintaining over 10 hours battery life. The controls allow it to be adjusted to different volumes and types of music. All for just £20.</p></div></div>
+      </section>
 
-        <div class="project3-details">
-          <div class="project3-details1">
-            <div class="project3-container3">
-              <h2 class="project3-details-heading heading2">Product Visualisation</h2>
-              <span class="project3-details-sub-heading">
-                The pod came in the 3 Apollo Tech brand colours; red, white and black.
-                Constant prototyping meant we often had the most up to date model to
-                take pictures and videos of in reality. Despite this, timing a good shot of the
-                pod in a dark room was often difficult. To get around this I modeled the V2
-                pod, allowing us to show it in different lighting and environments. I used
-                this to teach myself an end-to-end process from circuit design in Fusion360
-                to scene setup and rendering in Blender.
-              </span>
-            </div>
-            <img
-              alt="image"
-              src="public/apollo/40.jpg"
-              class="project3-details-image"
-            />
+      <section class="cs-section">
+        <div class="cs-wrap"><div class="cs-head"><div><span class="sectionTitle cs-head__num">01</span><h2 class="cs-title">Design Development</h2></div><div></div></div><figure class="cs-figure"><img src="public/apollo/ap-dev.webp" width="1024" height="682" alt="Design development sketches and prototypes" loading="lazy" decoding="async" /></figure></div>
+      </section>
+
+      <section class="cs-section cs-section--dark">
+        <div class="cs-wrap cs-split"><div class="cs-split__media"><img src="public/apollo/ap-v1.webp" width="1257" height="805" alt="Apollo Pod V1" loading="lazy" decoding="async" /></div><div><span class="sectionTitle cs-head__num">02</span><h2 class="cs-title">Apollo Pod V1</h2><div class="cs-text"><p><strong>30 Unit Batch Production Model.</strong> The first iteration of the pod that we sold contained all the key features but had lots of room for improvement. The LEDs needed to be brighter and the controls more intuitive. We moved from separate controls for audio threshold and frequency to one control for general intensity in the sound-reactive mode, and one control for frequency of flash in the auto-strobe mode.</p></div></div></div>
+      </section>
+
+      <section class="cs-section">
+        <div class="cs-wrap cs-split cs-split--rev"><div class="cs-split__media"><img src="public/apollo/ap-v2.webp" width="1500" height="967" alt="Exploded view of Apollo Pod V2" loading="lazy" decoding="async" /></div><div><span class="sectionTitle cs-head__num">03</span><h2 class="cs-title">Apollo Pod V2</h2><div class="cs-text"><p>V2 greatly improves on V1 by reducing the number of parts and the assembly time, from 30 minutes to just 5. This promotes greater production speed and consequently batch volume. After iterating on the casing and AB testing features like legs and controls, I stuck with the tilted form factor that had become a defining part of V1. Batch 2 contained 50 pods.</p></div></div></div>
+      </section>
+
+      <section class="cs-section cs-section--tint">
+        <div class="cs-wrap"><div class="cs-head"><div><span class="sectionTitle cs-head__num">04</span><h2 class="cs-title">Product Visualisation</h2></div><div class="cs-text"><p>The pod came in the 3 Apollo Tech brand colours; red, white and black. Constant prototyping meant we often had the most up to date model to take pictures and videos of in reality. Despite this, timing a good shot of the pod in a dark room was often difficult. To get around this I modeled the V2 pod, allowing us to show it in different lighting and environments. I used this to teach myself an end-to-end process from circuit design in Fusion360 to scene setup and rendering in Blender.</p></div></div><div class="cs-pair"><img src="public/apollo/ap-render1.webp" width="1164" height="1080" alt="Render of the pod next to speakers" loading="lazy" decoding="async" /><img src="public/apollo/ap-render2.webp" width="1300" height="745" alt="Pods in the three brand colours" loading="lazy" decoding="async" /></div></div>
+      </section>
+
+      <nav class="cs-next" aria-label="More projects">
+        <div class="cs-wrap">
+          <p class="sectionTitle">Where to next?</p>
+          <div class="cs-next__grid">
+            <a href="./mensura.html" class="cs-next__card">
+              <div class="cs-next__img"><img src="public/cards/mensura.webp" alt="" loading="lazy" decoding="async" /></div>
+              <span class="sectionTitle cs-next__dir">← Previous</span>
+              <span class="cs-next__title">Mensura Mask</span>
+            </a>
+            <a href="./futures.html" class="cs-next__card cs-next__card--next">
+              <div class="cs-next__img"><img src="public/cards/minimus.webp" alt="" loading="lazy" decoding="async" /></div>
+              <span class="sectionTitle cs-next__dir">Next →</span>
+              <span class="cs-next__title">Minimus</span>
+            </a>
           </div>
         </div>
+      </nav>
 
-        <div class="project3-banner1"></div>
-        <section class="project3-gallery">
-          <div class="project3-details6">
-            <h2 class="project3-details-heading2 heading2">Where to next?</h2>
-            <div class="project3-container6">
-              <h2 class="project3-details-heading3 heading2">&lt;</h2>
-              <div
-                class="gallery-card3-gallery-card gallery-card3-root-class-name49"
-              >
-              <a
-                href="./mensura.html"
-              >
-                <img
-                  alt="image"
-                  src="public/mensura/2-1500w.png"
-                  class="gallery-card3-image"
-                />
-              </a>
-              </div>
-              <a
-                href="./index.html"
-                class="project3-banner-button button"
-              >
-                Home
-              </a>
-              <div
-                class="gallery-card3-gallery-card gallery-card3-root-class-name48"
-              >
-              <a
-                href="./futures.html"
-              >
-                <img
-                  alt="image"
-                  src="public/futures/cover page 3-min.jpg"
-                  class="gallery-card3-image"
-                />
-              </a>
-              </div>
-              <h2 class="project3-details-heading4 heading2">&gt;</h2>
-            </div>
-          </div>
-        </section>
-            <div class="site-cta">
+    </main>
+
+    <div class="site-cta">
       <p class="site-cta__heading">Let's connect.</p>
-      <p class="site-cta__sub">
-        For something more real-time, go see LinkedIn.
-      </p>
-      <a
-        href="https://www.linkedin.com/in/joseph-folkes/"
-        target="_blank"
-        rel="noreferrer noopener"
-        class="site-cta__btn"
-      >Find me on LinkedIn ↗</a>
+      <p class="site-cta__sub">For something more real-time, go see LinkedIn.</p>
+      <a href="https://www.linkedin.com/in/joseph-folkes/" target="_blank" rel="noreferrer noopener" class="site-cta__btn">Find me on LinkedIn ↗</a>
     </div>
     <footer class="site-footer">
       <a href="./index.html" class="site-footer__brand">Joseph Folkes</a>
@@ -245,7 +100,12 @@
       </div>
       <p class="site-footer__copy">© 2026</p>
     </footer>
-      </div>
-    </div>
+
+    <script>
+      const nav = document.getElementById('site-nav');
+      window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 40);
+      }, { passive: true });
+    </script>
   </body>
 </html>
